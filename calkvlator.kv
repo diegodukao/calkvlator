@@ -13,7 +13,7 @@ BoxLayout:
 	cols: 4
 	rows: 5
 
-	Button:
+	ClearButton:
 		text: "C"
 	OperatorButton:
 		text: "/"
@@ -63,3 +63,6 @@ BoxLayout:
 
 <OperatorButton@Button>:
 	on_press: app.print_operator(self.text)
+
+<ClearButton@Button>:
+	on_press: app.clear_display()

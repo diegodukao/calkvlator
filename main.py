@@ -14,6 +14,9 @@ class Calkvlator(App):
         text = "{} {} ".format(self.root.display.text, operator)
         self.root.display.text = text
 
+    def clear_display(self):
+        self.root.display.text = ""
+
 
 if __name__ == "__main__":
     Calkvlator().run()
