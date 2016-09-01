@@ -2,14 +2,16 @@ BoxLayout:
     orientation: "vertical"
 	display: display_input
 
-    TextInput:
+    Display:
 		id: display_input
-        size_hint_y: 1
-
+		size_hint_y: 1
     Keyboard:
+		size_hint_y: 3.5
+
+
+<Display@TextInput>:
 
 <Keyboard@GridLayout>:
-	size_hint_y: 3.5
 	cols: 4
 	rows: 5
 
