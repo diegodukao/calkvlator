@@ -10,6 +10,10 @@ class Calkvlator(App):
         text = "{}{}".format(self.root.display.text, number)
         self.root.display.text = text
 
+    def print_operator(self, operator):
+        text = "{} {} ".format(self.root.display.text, operator)
+        self.root.display.text = text
+
 
 if __name__ == "__main__":
     Calkvlator().run()

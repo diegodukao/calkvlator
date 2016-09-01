@@ -15,9 +15,9 @@ BoxLayout:
 
 	Button:
 		text: "C"
-	Button:
+	OperatorButton:
 		text: "/"
-	Button:
+	OperatorButton:
 		text: "X"
 	Button:
 		text: "<x"
@@ -28,7 +28,7 @@ BoxLayout:
 		text: "8"
 	NumberButton:
 		text: "9"
-	Button:
+	OperatorButton:
 		text: "-"
 
 	NumberButton:
@@ -37,7 +37,7 @@ BoxLayout:
 		text: "5"
 	NumberButton:
 		text: "6"
-	Button:
+	OperatorButton:
 		text: "+"
 
 	NumberButton:
@@ -60,3 +60,6 @@ BoxLayout:
 
 <NumberButton@Button>:
 	on_press: app.print_number(self.text)
+
+<OperatorButton@Button>:
+	on_press: app.print_operator(self.text)
