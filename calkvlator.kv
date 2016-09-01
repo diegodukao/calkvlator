@@ -18,8 +18,8 @@ BoxLayout:
 	OperatorButton:
 		text: "/"
 	OperatorButton:
-		text: "X"
-	Button:
+		text: "*"
+	DelButton:
 		text: "<x"
 
 	NumberButton:
@@ -66,3 +66,6 @@ BoxLayout:
 
 <ClearButton@Button>:
 	on_press: app.clear_display()
+
+<DelButton@Button>:
+	on_press: app.del_char()

@@ -17,6 +17,9 @@ class Calkvlator(App):
     def clear_display(self):
         self.root.display.text = ""
 
+    def del_char(self):
+        self.root.display.text = self.root.display.text[:-1]
+
 
 if __name__ == "__main__":
     Calkvlator().run()
