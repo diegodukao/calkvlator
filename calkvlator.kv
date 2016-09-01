@@ -1,7 +1,9 @@
 BoxLayout:
     orientation: "vertical"
+	display: display_input
 
     TextInput:
+		id: display_input
         size_hint_y: 1
 
     Keyboard:
@@ -57,3 +59,4 @@ BoxLayout:
 		text: "="
 
 <NumberButton@Button>:
+	on_press: app.print_number(self.text)
