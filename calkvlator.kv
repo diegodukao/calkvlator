@@ -55,7 +55,7 @@ BoxLayout:
 		text: "."
 	Button:
 		text: "+/-"
-	Button:
+	EqualButton:
 		text: "="
 
 <NumberButton@Button>:
@@ -69,3 +69,6 @@ BoxLayout:
 
 <DelButton@Button>:
 	on_press: app.del_char()
+
+<EqualButton@Button>:
+	on_press: app.calculate()

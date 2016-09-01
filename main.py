@@ -20,6 +20,9 @@ class Calkvlator(App):
     def del_char(self):
         self.root.display.text = self.root.display.text[:-1]
 
+    def calculate(self):
+        self.root.display.text = str(eval(self.root.display.text))
+
 
 if __name__ == "__main__":
     Calkvlator().run()
