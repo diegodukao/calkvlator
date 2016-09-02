@@ -1,3 +1,5 @@
+#: import get_color_from_hex kivy.utils.get_color_from_hex
+
 BoxLayout:
     orientation: "vertical"
 	display: display_input
@@ -64,6 +66,12 @@ BoxLayout:
 		text: "+/-"
 	EqualButton:
 		text: "="
+
+
+<Button>:
+	background_normal: ''
+	background_down: ''
+	background_color: get_color_from_hex("#1F6982")
 
 <NumberButton@Button>:
 	font: "Roboto"
