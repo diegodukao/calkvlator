@@ -72,6 +72,8 @@ BoxLayout:
 	background_normal: ''
 	background_down: ''
 	background_color: get_color_from_hex("#1F6982")
+	on_press: self.background_color = get_color_from_hex("#184B5C")
+	on_release: self.background_color = get_color_from_hex("#1F6982")
 
 <NumberButton@Button>:
 	font: "Roboto"
