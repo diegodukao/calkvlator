@@ -1,12 +1,15 @@
 BoxLayout:
     orientation: "vertical"
 	display: display_input
+	padding: 7
 
     TextInput:
 		id: display_input
 		size_hint_y: 1
 		font_name: 'Roboto'
 		font_size: 60
+		padding: 6
+		spacing: 3
     Keyboard:
 		size_hint_y: 3.5
 
@@ -14,6 +17,8 @@ BoxLayout:
 <Keyboard@GridLayout>:
 	cols: 4
 	rows: 5
+	spacing: 2
+	padding: 4
 
 	ClearButton:
 		text: "C"
