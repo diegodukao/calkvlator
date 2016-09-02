@@ -3,7 +3,9 @@ kivy.require('1.9.1')
 
 from kivy.app import App
 from kivy.core.text import LabelBase
+from kivy.core.window import Window
 from kivy.properties import BooleanProperty
+from kivy.utils import get_color_from_hex
 
 
 # Registering the custom fonts
@@ -42,4 +44,6 @@ class Calkvlator(App):
 
 
 if __name__ == "__main__":
+    Window.clearcolor = get_color_from_hex('#FFFFFF')
     Calkvlator().run()
+
