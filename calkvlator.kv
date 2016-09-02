@@ -55,40 +55,41 @@ BoxLayout:
 		text: "2"
 	NumberButton:
 		text: "3"
-	Button:
+	CalcButton:
 		text: "%"
 
 	NumberButton:
 		text: "0"
-	Button:
+	CalcButton:
 		text: "."
-	Button:
+	CalcButton:
 		text: "+/-"
 	EqualButton:
 		text: "="
 
 
-<Button>:
+<CalcButton@Button>:
+	font_size: 30
 	background_normal: ''
 	background_down: ''
 	background_color: get_color_from_hex("#1F6982")
 	on_press: self.background_color = get_color_from_hex("#184B5C")
 	on_release: self.background_color = get_color_from_hex("#1F6982")
 
-<NumberButton@Button>:
+<NumberButton@CalcButton>:
 	font: "Roboto"
 	font_size: 30
 	bold: True
 	on_press: app.print_number(self.text)
 
-<OperatorButton@Button>:
+<OperatorButton@CalcButton>:
 	on_press: app.print_operator(self.text)
 
-<ClearButton@Button>:
+<ClearButton@CalcButton>:
 	on_press: app.clear_display()
 
-<DelButton@Button>:
+<DelButton@CalcButton>:
 	on_press: app.del_char()
 
-<EqualButton@Button>:
+<EqualButton@CalcButton>:
 	on_press: app.calculate()
