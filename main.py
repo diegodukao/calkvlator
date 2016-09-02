@@ -2,7 +2,14 @@ import kivy
 kivy.require('1.9.1')
 
 from kivy.app import App
+from kivy.core.text import LabelBase
 from kivy.properties import BooleanProperty
+
+
+# Registering the custom fonts
+LabelBase.register(name='Roboto',
+                   fn_regular='./fonts/Roboto-Thin.ttf',
+                   fn_bold='./fonts/Roboto-Medium.ttf')
 
 
 class Calkvlator(App):

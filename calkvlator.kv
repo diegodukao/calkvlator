@@ -2,14 +2,14 @@ BoxLayout:
     orientation: "vertical"
 	display: display_input
 
-    Display:
+    TextInput:
 		id: display_input
 		size_hint_y: 1
+		font_name: 'Roboto'
+		font_size: 60
     Keyboard:
 		size_hint_y: 3.5
 
-
-<Display@TextInput>:
 
 <Keyboard@GridLayout>:
 	cols: 4
@@ -61,6 +61,9 @@ BoxLayout:
 		text: "="
 
 <NumberButton@Button>:
+	font: "Roboto"
+	font_size: 30
+	bold: True
 	on_press: app.print_number(self.text)
 
 <OperatorButton@Button>:
