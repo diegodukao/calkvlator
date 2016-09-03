@@ -2,6 +2,12 @@ import kivy
 kivy.require('1.9.1')
 
 from kivy.app import App
+from kivy.properties import ObjectProperty
+from kivy.uix.boxlayout import BoxLayout
+
+
+class CalkvlatorRoot(BoxLayout):
+    display = ObjectProperty()
 
 
 class Calkvlator(App):
